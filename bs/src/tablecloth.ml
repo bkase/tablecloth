@@ -9,8 +9,6 @@ let identity (value : 'a) : 'a = value
 let flip f x y = f y x
 
 module Array = struct
-  let empty : 'a array = [||]
-
   let singleton a = [|a|]
 
   let length (a : 'a array) : int = Belt.Array.length a
