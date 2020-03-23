@@ -74,8 +74,6 @@ val ( << ) : ('b -> 'c) -> ('a -> 'b) -> 'a -> 'c
 val identity : 'a -> 'a
 
 module Array : sig
-  val empty : 'a array
-
   val singleton : 'a -> 'a array
 
   val length : 'a array -> int
