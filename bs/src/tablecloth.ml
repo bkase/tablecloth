@@ -106,7 +106,7 @@ module Array = struct
       else max 0 (min (length array) (length array + defaultTo))
     in    
     
-    if sliceFrom >= sliceTo then empty else (
+    if sliceFrom >= sliceTo then [||] else (
       Belt.Array.makeBy (sliceTo - sliceFrom) (fun i -> array.(i + sliceFrom))
     )
 
