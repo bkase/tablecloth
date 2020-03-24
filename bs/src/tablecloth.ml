@@ -783,11 +783,11 @@ module String = struct
 
   let starts_with = startsWith
 
-  let toLower (s : string) : string = String.lowercase s
+  let toLower (s : string) : string = String.lowercase_ascii s
 
   let to_lower = toLower
 
-  let toUpper (s : string) : string = String.uppercase s
+  let toUpper (s : string) : string = String.uppercase_ascii s
 
   let to_upper = toUpper
 
