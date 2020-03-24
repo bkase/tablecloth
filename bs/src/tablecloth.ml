@@ -791,11 +791,11 @@ module String = struct
 
   let to_upper = toUpper
 
-  let uncapitalize (s : string) : string = String.uncapitalize s
+  let uncapitalize (s : string) : string = String.uncapitalize_ascii s
 
-  let capitalize (s : string) : string = String.capitalize s
+  let capitalize (s : string) : string = String.capitalize_ascii s
 
-  let isCapitalized (s : string) : bool = s = String.capitalize s
+  let isCapitalized (s : string) : bool = s = String.capitalize_ascii s
 
   let is_capitalized = isCapitalized
 
